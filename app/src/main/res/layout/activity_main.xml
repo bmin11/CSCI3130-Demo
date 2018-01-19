@@ -6,13 +6,42 @@
     android:layout_height="match_parent"
     tools:context="com.example.acme.csci3130_demo.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
 
+        <EditText
+            android:id="@+id/tbHello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="143dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/textbox_hello"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/tbHello2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tbHello"
+            android:layout_below="@+id/btCopy"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="@string/textbox_hello" />
+
+        <Button
+            android:id="@+id/btCopy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/button_copy" />
+    </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
